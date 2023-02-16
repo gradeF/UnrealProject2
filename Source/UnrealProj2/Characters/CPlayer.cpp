@@ -90,7 +90,7 @@ void ACPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis( "VerticalLook", this, &ACPlayer::OnVerticalLook );
 	PlayerInputComponent->BindAction( "Avoid", EInputEvent::IE_Pressed, this, &ACPlayer::OnAvoid );
 	PlayerInputComponent->BindAction( "OneHand", EInputEvent::IE_Pressed, this, &ACPlayer::OnOneHand );
-	PlayerInputComponent->BindAction("OneHand", EInputEvent::IE_Pressed, this, &ACPlayer::OnTwoHand);
+	PlayerInputComponent->BindAction("TwoHand", EInputEvent::IE_Pressed, this, &ACPlayer::OnTwoHand);
 	PlayerInputComponent->BindAction( "Action", EInputEvent::IE_Pressed, this, &ACPlayer::OnDoAction );
 }
 
